@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    background: linear-gradient(rgba(220,14,120,0.5), rgba(220,14,120,0.5)),
+                linear-gradient(white, white);
+    font-family: sans-serif;
+    color: white;
+}
+
+.aboutDiv {
+    border: 2px solid whitesmoke;
+    border-radius: 0 3px 0 3px;
+    height: 70vh;
+    width: 39.375vw;
+    padding: 3vh;
+}
+
+.detailsDiv {
+
+}
+
+.heading {
+    font-weight: bold;
+}
+
+.heading3 {
+    color: grey;
+}
