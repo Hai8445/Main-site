@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Personal Portfolio",
+        "description": "A portfolio built to document projects and major milestones in my coding journey",
+        "github_link": "https://github.com/Hai8445/Main-site"
+    },
+    {
+        "title": "Allacrity Hackathon",
+        "description": "As a team, we built a chrome extension to intercept web traffic and alert users of professionally unsafe AI tools.",
+        "github_link": "https://github.com/Ronit-06/AI-Detection-Extension-Hackathon"
+    },
+    {
+        "title": "UKSEDS Rover Trials Project",
+        "description": "Built a prototype rover capable of traversing Martian terrain. Included live video feed",
+        "github_link": "https://github.com/tamdhiman/Olympus-Rover-Trial-2025"
+    },
+    {
+        "title": "NLP Hackathon",
+        "description": "Utilised an OpenAI API to create a tool that analyses public sentiment of various companies to return graphs and investment recommendations",
+        "github_link": "https://github.com/1hannan1khan/NLPHackathon"
+    },
+    {
+        "title": ""
+    }
+
+]
