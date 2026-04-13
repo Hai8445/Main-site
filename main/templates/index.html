@@ -4,6 +4,9 @@
             <title>About</title>
             {%- block metas %}
             {%- endblock metas %}
+            {%- block styles %}
+                <link rel = "stylesheet" href = "{{ url_for('static', filename = 'index.css') }}">
+            {%- endblock styles %}
         {%- endblock head %}
         {% block body -%}
         
@@ -11,11 +14,27 @@
             <h1 class = "heading">
                 Abdullah Toor
             </h1>
-            <h3>
+            <h3 class = "heading3">
                 abdullahtoor325@gmail.com
             </h3>
+            <span>
+                A wesbite depicting all projects I've completed over the years (counting this).
+            </span>
+        </div>
+
+        <div class = "projectsDiv">
+            {% if projects %}
+                {% for project in projects %}
+                    <div class = "singleProject">
+
+                    </div>
+                {% endfor %}
+            {% endif %}
+            <div class = "singleProject">
+                
+            </div>
         </div>
 
         {% endblock body -%}
-    {%- endblock html}
+    {%- endblock html %}
 {% endblock doc -%}
