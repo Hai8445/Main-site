@@ -9,13 +9,42 @@ body {
     flex-direction: row;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+.sectionOne {
+    width: 39.375vw;
+    display: flex;
+    flex-direction: column;
+}
+
 .aboutDiv {
     border: 2px solid whitesmoke;
     border-width: 0 2px 2px 0;
-    border-radius: 0 0 10px 0;
-    height: 70vh;
+    border-radius: 0 0 20px 0;
+    height: 63vh;
     width: 39.375vw;
     padding: 3vh 2vw;
+}
+
+.meetingDiv {
+    margin: 2.5vh 0 0 0;
+    height: 34.5vh;
+    padding: 3vh 2vw;
+    width: 39.375vw;
+
+    border: 2px solid whitesmoke;
+    border-width: 2px 2px 2px 0;
+    border-radius: 0 20px 20px 0;
+}
+
+.qrCode {
+    float:right;
+    
+    width:10vw;
+    height: 10vw;
+    margin-top: -4vh;
 }
 
 .projectsDiv {
@@ -28,7 +57,6 @@ body {
     border-radius: 20px 0 0 0;
     display: flex;
     flex-direction: column;
-
 }
 
 .detailsDiv {
@@ -39,13 +67,41 @@ body {
     width: 53.20625vw;
     min-height: 14vh;
     height: fit-content;
-    background-color: blue;
+    background-color: rgb(42, 98, 195);;
     margin: 2vw;
     border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
 
 
 }
 
+.projectDetails {
+    flex: 3;
+    padding: 1.5vh 1.5vw;
+}
+
+.projectTitle {
+    font-weight: bold;
+    font-size: large;
+}
+
+.gitHubLink {
+    flex: 2;
+    border: none;
+    cursor: pointer;
+
+    padding: 1.5vh 1.5vw;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.3rem;
+    transition: background-color .5s ease-in ;
+}
+
+.gitHubLink:hover {
+    background-color: aquamarine;
+}
 .heading {
     font-weight: bold;
 }

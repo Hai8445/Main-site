@@ -9,30 +9,42 @@
             {%- endblock styles %}
         {%- endblock head %}
         {% block body -%}
-        
-        <section class = "aboutDiv">
-            <h1 class = "heading">
-                Abdullah Toor
-            </h1>
-            <h3 class = "heading3">
-                abdullahtoor325@gmail.com
-            </h3>
-            <span>
-                Welcome to my website. I built this portfolio to document my progress as a developer and to showcase the practical solutions I've created along the way. Learning to code is an ongoing process of tackling new challenges, and this site is designed to keep a detailed track of my growing skill set while presenting my projects in a clean, accessible format. From building responsive layouts to integrating backend logic, every project featured here represents a step forward in my capability to design, develop, and deploy effective software.
-            </span>
+        <section class = "sectionOne">
+            <section class = "aboutDiv">
+                <h1 class = "heading">
+                    Abdullah Toor
+                </h1>
+                <h3 class = "heading3">
+                    abdullahtoor325@gmail.com
+                </h3>
+                <span>
+                    Welcome to my website. I built this portfolio to document my progress as a developer and to showcase the practical solutions I've created along the way. Learning to code is an ongoing process of tackling new challenges, and this site is designed to keep a detailed track of my growing skill set while presenting my projects in a clean, accessible format. From building responsive layouts to integrating backend logic, every project featured here represents a step forward in my capability to design, develop, and deploy effective software.
+                </span>
+            </section>
+            <section class = "meetingDiv">
+                <h2 class = "heading">Want to set up a meeting?</h2>
+                <span>
+                    Click <a href="https://calendly.com/abdullahtoor325/30min" target="_blank" class="meetingLink">here</a>, or scan the QR code:
+                </span>
+                <img class = "qrCode" src="{{ url_for('static', filename='meetingQRCode.png') }}" alt="Meeting QR Code" class="qr-code">
+            </section>
         </section>
 
         <main class = "projectsDiv">
             {% if projects %}
                 {% for project in projects %}
                     <div class = "singleProject">
-
+                        <div class = "projectDetails">
+                            <span class = "projectTitle">{{ project.title }}</span>
+                            <div>{{ project.description }} </div>
+                        </div>
+                        <button class = "gitHubLink" onclick="window.open('{{ project.github_link }}', '_blank')">
+                            View GitHub Link
+                        </button>
                     </div>
                 {% endfor %}
             {% endif %}
-            <div class = "singleProject">
-                
-            </div>
+
         </main>
 
         {% endblock body -%}

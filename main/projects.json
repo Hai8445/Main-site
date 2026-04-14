@@ -1,7 +1,7 @@
 [
     {
         "title": "Personal Portfolio",
-        "description": "A portfolio built to document projects and major milestones in my coding journey",
+        "description": "A portfolio built to document projects and major milestones in my coding journey.",
         "github_link": "https://github.com/Hai8445/Main-site"
     },
     {
@@ -11,12 +11,12 @@
     },
     {
         "title": "UKSEDS Rover Trials Project",
-        "description": "Built a prototype rover capable of traversing Martian terrain. Included live video feed",
+        "description": "Built a prototype rover capable of traversing Martian terrain. Included streaming live video food.",
         "github_link": "https://github.com/tamdhiman/Olympus-Rover-Trial-2025"
     },
     {
         "title": "NLP Hackathon",
-        "description": "Utilised an OpenAI API to create a tool that analyses public sentiment of various companies to return graphs and investment recommendations",
+        "description": "Utilised an OpenAI API to create a tool that analyses public sentiment of various companies to return graphs and investment recommendations.",
         "github_link": "https://github.com/1hannan1khan/NLPHackathon"
     },
     {
