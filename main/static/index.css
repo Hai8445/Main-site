@@ -44,7 +44,7 @@ body {
     
     width:10vw;
     height: 10vw;
-    margin-top: -4vh;
+    margin-top: -7.5vh;
 }
 
 .projectsDiv {
@@ -53,8 +53,8 @@ body {
     width: 59.20625vw;
     border: 2px solid whitesmoke;
     margin: 2.5vh 0 0 1.41875vw;
-    border-width: 2px 0 0 2px;
-    border-radius: 20px 0 0 0;
+    border-width: 2px 0 2px 2px;
+    border-radius: 20px 0 0 20px;
     display: flex;
     flex-direction: column;
 }

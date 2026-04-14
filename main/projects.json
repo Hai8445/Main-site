@@ -18,9 +18,6 @@
         "title": "NLP Hackathon",
         "description": "Utilised an OpenAI API to create a tool that analyses public sentiment of various companies to return graphs and investment recommendations.",
         "github_link": "https://github.com/1hannan1khan/NLPHackathon"
-    },
-    {
-        "title": ""
     }
 
 ]
