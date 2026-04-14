@@ -1,18 +1,18 @@
-body {
-    margin: 0;
-    /*background: linear-gradient(rgba(220,14,120,0.5), rgba(220,14,120,0.5)),
-                linear-gradient(white, white);*/
-    background: rgb(68, 114, 194);
-    font-family: sans-serif;
-    color: white;
-    display: flex;
-    flex-direction: row;
-}
-
 * {
     box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+    background: #0f172a; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #f8fafc;
+    display: flex;
+    flex-direction: row;
+    line-height: 1.6;
+}
+
+/* --- Layout Containers --- */
 .sectionOne {
     width: 39.375vw;
     display: flex;
@@ -20,61 +20,89 @@ body {
 }
 
 .aboutDiv {
-    border: 2px solid whitesmoke;
-    border-width: 0 2px 2px 0;
+    border: 1px solid #334155;
+    border-width: 0 1px 1px 0;
     border-radius: 0 0 20px 0;
+    
+    /* Subtle gradient to give depth */
+    background: linear-gradient(145deg, #1e293b, #0f172a);
     height: 63vh;
     width: 39.375vw;
-    padding: 3vh 2vw;
+    padding: 4vh 3vw;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .meetingDiv {
     margin: 2.5vh 0 0 0;
     height: 34.5vh;
-    padding: 3vh 2vw;
+    padding: 3vh 3vw; 
     width: 39.375vw;
 
-    border: 2px solid whitesmoke;
-    border-width: 2px 2px 2px 0;
+    border: 1px solid #334155;
+    border-width: 1px 1px 1px 0;
     border-radius: 0 20px 20px 0;
-}
-
-.qrCode {
-    float:right;
-    
-    width:10vw;
-    height: 10vw;
-    margin-top: -7.5vh;
+    background: linear-gradient(145deg, #1e293b, #0f172a);
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .projectsDiv {
     min-height: 97.2vh;
     height: fit-content;
     width: 59.20625vw;
-    border: 2px solid whitesmoke;
+    
+    border: 1px solid #334155;
     margin: 2.5vh 0 0 1.41875vw;
-    border-width: 2px 0 2px 2px;
+    border-width: 1px 0 1px 1px;
     border-radius: 20px 0 0 20px;
+    
+    background: #0f172a; /* Blends into body */
     display: flex;
     flex-direction: column;
+    padding: 1vh 0; /* Slight padding to breathe */
 }
 
-.detailsDiv {
-
+/* --- Typography --- */
+.heading {
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    color: #f1f5f9;
+    margin-bottom: 0.5vh;
 }
+
+.heading3 {
+    color: #94a3b8; 
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 3vh;
+    font-size: 1rem;
+}
+
+span {
+    color: #cbd5e1; 
+    font-size: 1.05rem;
+}
+
 
 .singleProject {
-    width: 53.20625vw;
+    width: auto;
     min-height: 14vh;
     height: fit-content;
-    background-color: rgb(42, 98, 195);;
-    margin: 2vw;
-    border-radius: 10px;
-    padding: 10px;
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    
+    margin: 1.5vw 2vw;
+    border-radius: 12px;
+    padding: 1vw;
+    
     display: flex;
     flex-direction: row;
+    align-items: center;
+    
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
 
-
+.singleProject:hover {
+    transform: translateY(-3px);
 }
 
 .projectDetails {
@@ -83,30 +111,58 @@ body {
 }
 
 .projectTitle {
-    font-weight: bold;
-    font-size: large;
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: #f1f5f9;
+    display: block;
+    margin-bottom: 1vh;
+}
+
+.projectDetails div {
+    color: #94a3b8;
+    line-height: 1.5;
 }
 
 .gitHubLink {
-    flex: 2;
+    flex: 1;
+    background-color: #f8fafc;
+    color: #0f172a;
     border: none;
     cursor: pointer;
 
     padding: 1.5vh 1.5vw;
-    border-radius: 5px;
-    font-weight: bold;
-    font-size: 1.3rem;
-    transition: background-color .5s ease-in ;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .gitHubLink:hover {
-    background-color: aquamarine;
-}
-.heading {
-    font-weight: bold;
+    background-color: #cbd5e1;
+    transform: scale(1.02); 
 }
 
-.heading3 {
-    color: grey;
-    margin-top: 0px;
+.meetingLink {
+    color: #38bdf8;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.meetingLink:hover {
+    color: #7dd3fc;
+    text-decoration: underline;
+}
+
+/* --- QR Code --- */
+.qrCode {
+    float: right;
+    width: 8vw;
+    height: 8vw;
+    margin-top: -5.5vh;
+    
+    border-radius: 8px;
+    border: 3px solid #f8fafc;
 }
