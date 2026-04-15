@@ -179,7 +179,7 @@ span {
     .aboutDiv {
         width: 100%;
         height: auto;
-        border-width: 1px; /* Full border for stacked look */
+        border-width: 1px;
         border-radius: 20px;
     }
 
@@ -189,7 +189,7 @@ span {
         border-width: 1px;
         border-radius: 20px;
         margin-top: 2vh;
-        text-align: center; /* Center text to make the QR code sit nicely */
+        text-align: center; 
     }
 
     .qrCode {
