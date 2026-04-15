@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="./static/index.css">
+</head>
+<body>
+    <section class="sectionOne">
+        <section class="aboutDiv">
+            <h1 class="heading">Abdullah Toor</h1>
+            <h3 class="heading3">abdullahtoor325@gmail.com</h3>
+            <span>
+                Welcome to my digital workspace. I built this site to document my coding journey, tackle new challenges, and showcase my projects in a clean, accessible format. From building responsive layouts to integrating backend logic, every project featured here represents a step forward in my capability to design, develop, and deploy effective software.
+            </span>
+        </section>
+        <section class="meetingDiv">
+            <h2 class="heading">Want to set up a meeting?</h2>
+            <span>
+                Click <a href="https://calendly.com/abdullahtoor325/30min" target="_blank" class="meetingLink">here</a>, or scan the QR code:
+            </span>
+            <img class="qrCode" src="./static/meetingQRCode.png" alt="Meeting QR Code">
+        </section>
+    </section>
+
+    <main class="projectsDiv" id="projects-container">
+        <div style="padding: 2vw; color: #94a3b8;">Loading projects...</div>
+    </main>
+
+    <script>
+        fetch('./projects.json')
+            .then(response => response.json())
+            .then(projects => {
+                const container = document.getElementById('projects-container');
+                container.innerHTML = ''; 
+
+                projects.forEach(project => {
+                    const projectHTML = `
+                        <div class="singleProject">
+                            <div class="projectDetails">
+                                <span class="projectTitle">${project.title}</span>
+                                <div>${project.description}</div>
+                            </div>
+                            <button class="gitHubLink" onclick="window.open('${project.github_link}', '_blank')">
+                                View GitHub Link
+                            </button>
+                        </div>
+                    `;
+                    container.innerHTML += projectHTML;
+                });
+            })
+            .catch(error => {
+                console.error('Error loading projects:', error);
+                document.getElementById('projects-container').innerHTML = '<div style="padding: 2vw; color: #ef4444;">Failed to load projects.</div>';
+            });
+    </script>
+</body>
+</html>
