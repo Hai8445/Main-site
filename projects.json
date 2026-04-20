@@ -6,7 +6,7 @@
     },
     {
         "title": "ETLR Hackathon - CareerFlow Pipeline",
-        "description": "Built an automated job matching and CV optimisation pipeline using ETLR's event ingestion engine. Integrated a Discord bot UI with Claude (Anthropic API) to deliver daily tailored job alerts, generate custom CVs, and dynamically upgrade resumes to beat ATS systems.",
+        "description": "Built an automated job matching and CV optimisation pipeline using ETLR's event ingestion engine. Integrated a Discord bot UI with Claude (Anthropic API) to deliver daily tailored job alerts, generate custom CVs, and upgrade resumes.",
         "github_link": "https://github.com/Hai8445/CareerFlow"
     },
     {
@@ -16,7 +16,7 @@
     },
     {
         "title": "UKSEDS Rover Trials Project",
-        "description": "Built a prototype rover capable of traversing Martian terrain. Included streaming live video food.",
+        "description": "Built a prototype rover capable of traversing Martian terrain. Included streaming live video feed.",
         "github_link": "https://github.com/tamdhiman/Olympus-Rover-Trial-2025"
     },
     {
@@ -26,7 +26,7 @@
     },
     {
         "title": "CherryOnTop Desserts POS System",
-        "description": "My first full-stack project, originally built as a complete Point of Sale (POS) and inventory system for a dessert shop. This repository serves as a public-facing demonstration of the e-commerce storefront.",
+        "description": "My first full stack project, originally built as a complete Point of Sale system for a dessert shop.",
         "github_link": "https://github.com/Hai8445/CherryOnTopPublic.git"
     }
 
