@@ -10,7 +10,7 @@
         "github_link": "https://github.com/Hai8445/CareerFlow"
     },
     {
-        "title": "Allacrity Hackathon",
+        "title": "Alacrity Hackathon",
         "description": "As a team, we built a chrome extension to intercept web traffic and alert users of professionally unsafe AI tools.",
         "github_link": "https://github.com/Ronit-06/AI-Detection-Extension-Hackathon"
     },
@@ -25,9 +25,14 @@
         "github_link": "https://github.com/1hannan1khan/NLPHackathon"
     },
     {
+        "title": "A-Level Gym Site",
+        "description": "Gym booking system, alongside other features including reviews page and personal fitness recommendations. Made for A-Level coursework",
+        "github_link": "https://github.com/125thparty/abdullah-u5"
+    },
+    {
         "title": "CherryOnTop Desserts POS System",
         "description": "My first full stack project, originally built as a complete Point of Sale system for a dessert shop.",
-        "github_link": "https://github.com/Hai8445/CherryOnTopPublic.git"
+        "github_link": "https://github.com/Hai8445/CherryOnTopPublic"
     }
 
 ]
