@@ -6,7 +6,7 @@
     },
     {
         "title": "ETLR Hackathon - CareerFlow Pipeline",
-        "description": "Built an automated job matching and CV optimisation pipeline using ETLR's event ingestion engine. Integrated a Discord bot UI with Claude (Anthropic API) to deliver daily tailored job alerts, generate custom CVs, and upgrade resumes.",
+        "description": "Built an automated job matching and CV optimisation pipeline using ETLR's event ingestion engine. Integrated a Discord bot UI with Claude to deliver daily tailored job alerts, generate custom CVs, and upgrade resumes.",
         "github_link": "https://github.com/Hai8445/CareerFlow"
     },
     {

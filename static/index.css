@@ -10,9 +10,9 @@ body {
     display: flex;
     flex-direction: row;
     line-height: 1.6;
+    /* overflow: hidden; */
 }
 
-/* --- Layout Containers --- */
 .sectionOne {
     width: 39.375vw;
     display: flex;
@@ -24,17 +24,16 @@ body {
     border-width: 0 1px 1px 0;
     border-radius: 0 0 20px 0;
     
-    /* Subtle gradient to give depth */
     background: linear-gradient(145deg, #1e293b, #0f172a);
     height: 63vh;
     width: 39.375vw;
-    padding: 4vh 3vw;
+    padding: 2vh 3vw;
     box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .meetingDiv {
     margin: 2.5vh 0 0 0;
-    height: 34.5vh;
+    height: 32vh;
     padding: 3vh 3vw; 
     width: 39.375vw;
 
@@ -46,7 +45,8 @@ body {
 }
 
 .projectsDiv {
-    min-height: 97.2vh;
+    /* min-height: 97.2vh; */
+    max-height: 95vh;
     height: fit-content;
     width: 59.20625vw;
     
@@ -55,13 +55,13 @@ body {
     border-width: 1px 0 1px 1px;
     border-radius: 20px 0 0 20px;
     
-    background: #0f172a; /* Blends into body */
+    background: #0f172a;
     display: flex;
     flex-direction: column;
-    padding: 1vh 0; /* Slight padding to breathe */
+    padding: 1vh 0;
+    overflow-y: scroll;
 }
 
-/* --- Typography --- */
 .heading {
     font-weight: 700;
     letter-spacing: -0.5px;
@@ -97,6 +97,7 @@ span {
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-shrink: 0;
     
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
