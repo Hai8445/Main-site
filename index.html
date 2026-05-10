@@ -34,8 +34,14 @@
             .then(projects => {
                 const container = document.getElementById('projects-container');
                 container.innerHTML = ''; 
+                
+                let currentYear = null;
 
                 projects.forEach(project => {
+                    if (project.year != currentYear) {
+                        container.innerHTML += `<div class = "yearHeader"> ${ project.year }</div>`;
+                        currentYear = project.year;
+                    }
                     const projectHTML = `
                         <div class="singleProject">
                             <div class="projectDetails">
